@@ -28,7 +28,7 @@ export class FormPage extends BasePage {
         return cy.get('.react-datepicker__year-select');
     }
     static get daySelect(){
-        return cy.get('[aria-label="Choose Friday, February 28th, 1930"]');
+        return cy.get('.react-datepicker__day').not('.react-datepicker__day--outside-month');
     }
    
 
